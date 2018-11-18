@@ -5,7 +5,7 @@ Sub Main()
 
   aa = {}
 
-  aa.nodejs_enabled = false
+  aa.nodejs_enabled = true
   aa.inspector_server = {port:2999}
   aa.hwz_default = "on"
   aa.javascript_enabled = true
