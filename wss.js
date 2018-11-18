@@ -12,9 +12,10 @@ wss.on('connection', function connection(ws) {
   console.log('connection event received');
   ws.on('message', function incoming(message) {
     console.log('received: %s', message);
+    ws.send('from server, received message: ' + message);
   });
  
-  ws.send('something');
+  ws.send('connection opened');
 });
 
 server.listen(process.env.PORT || 8999, () => {
