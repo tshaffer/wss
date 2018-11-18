@@ -15,7 +15,7 @@ wss.on('connection', function connection(ws) {
     ws.send('from server, received message: ' + message);
   });
  
-  ws.send('connection opened');
+  ws.send('connected: BrightSign connected to sample server');
 });
 
 server.listen(process.env.PORT || 8999, () => {
